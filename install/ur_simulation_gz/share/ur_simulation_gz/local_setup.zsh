@@ -1,0 +1,1 @@
+/home/bin1225/workspaces/ur_gz/build/ur_simulation_gz/ament_cmake_environment_hooks/local_setup.zsh

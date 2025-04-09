@@ -1,0 +1,34 @@
+[0.024s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/ur_simulation_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/ur_simulation_gz -- -j22 -l22
+[0.127s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.493s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.549s] -- Found launch_testing_ament_cmake: 3.4.4 (/opt/ros/jazzy/share/launch_testing_ament_cmake/cmake)
+[0.550s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.736s] -- Found ament_cmake_pytest: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)
+[1.728s] -- Configuring done (1.6s)
+[1.745s] -- Generating done (0.0s)
+[1.749s] -- Build files have been written to: /home/bin1225/workspaces/ur_gz/build/ur_simulation_gz
+[1.780s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/ur_simulation_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/ur_simulation_gz -- -j22 -l22
+[1.795s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/ur_simulation_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/bin1225/workspaces/ur_gz/build/ur_simulation_gz
+[1.802s] -- Install configuration: ""
+[1.803s] -- Execute custom install script
+[1.805s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/config/ur_controllers.yaml
+[1.806s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/launch/ur_sim_control.launch.py
+[1.807s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/launch/ur_sim_moveit.launch.py
+[1.809s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/urdf/ur_gz.ros2_control.xacro
+[1.809s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/urdf/ur_gz.urdf.xacro
+[1.810s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gz
+[1.811s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gz
+[1.812s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/environment/ament_prefix_path.sh
+[1.813s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/environment/ament_prefix_path.dsv
+[1.814s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/environment/path.sh
+[1.814s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/environment/path.dsv
+[1.815s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/local_setup.bash
+[1.815s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/local_setup.sh
+[1.816s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/local_setup.zsh
+[1.817s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/local_setup.dsv
+[1.817s] -- Symlinking: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/package.dsv
+[1.830s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ament_index/resource_index/packages/ur_simulation_gz
+[1.831s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/cmake/ur_simulation_gzConfig.cmake
+[1.832s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/cmake/ur_simulation_gzConfig-version.cmake
+[1.832s] -- Up-to-date symlink: /home/bin1225/workspaces/ur_gz/install/ur_simulation_gz/share/ur_simulation_gz/package.xml
+[1.837s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/ur_simulation_gz' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/bin1225/workspaces/ur_gz/build/ur_simulation_gz

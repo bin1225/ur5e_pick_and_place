@@ -1,0 +1,45 @@
+[0.017s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/ur_simulation_gz': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/ur_simulation_gz -- -j22 -l22
+[0.046s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.340s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.351s] -- Found launch_testing_ament_cmake: 3.4.4 (/opt/ros/jazzy/share/launch_testing_ament_cmake/cmake)
+[0.352s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[0.546s] -- Found ament_cmake_pytest: 2.5.3 (/opt/ros/jazzy/share/ament_cmake_pytest/cmake)
+[1.136s] -- Found gz_cmake_vendor: 0.0.9 (/opt/ros/jazzy/share/gz_cmake_vendor/cmake)
+[1.172s] [31mCMake Error at /opt/ros/jazzy/opt/gz_cmake_vendor/extra_cmake/lib/cmake/gz-cmake/gz-cmake-config.cmake:6 (add_library):
+[1.172s]   add_library cannot create ALIAS target "gz-cmake::gz-cmake" because target
+[1.172s]   "gz-cmake3::gz-cmake3" does not already exist.
+[1.172s] Call Stack (most recent call first):
+[1.172s]   CMakeLists.txt:31 (find_package)
+[1.172s] 
+[1.172s] [0m
+[1.173s] [31mCMake Error at /opt/ros/jazzy/opt/gz_cmake_vendor/extra_cmake/lib/cmake/gz-cmake/gz-cmake-config.cmake:7 (add_library):
+[1.173s]   add_library cannot create ALIAS target "gz-cmake::core" because target
+[1.173s]   "gz-cmake3::gz-cmake3" does not already exist.
+[1.173s] Call Stack (most recent call first):
+[1.173s]   CMakeLists.txt:31 (find_package)
+[1.173s] 
+[1.173s] [0m
+[1.174s] [31mCMake Error at /opt/ros/jazzy/opt/gz_cmake_vendor/extra_cmake/lib/cmake/gz-cmake/gz-cmake-config.cmake:10 (get_target_property):
+[1.174s]   get_target_property() called with non-existent target
+[1.174s]   "gz-cmake3::requested".
+[1.174s] Call Stack (most recent call first):
+[1.174s]   CMakeLists.txt:31 (find_package)
+[1.174s] 
+[1.174s] [0m
+[1.174s] [31mCMake Error at /opt/ros/jazzy/opt/gz_cmake_vendor/extra_cmake/lib/cmake/gz-cmake/gz-cmake-config.cmake:24 (add_library):
+[1.174s]   add_library cannot create ALIAS target "gz-cmake" because target
+[1.174s]   "gz-cmake3::gz-cmake3" does not already exist.
+[1.174s] Call Stack (most recent call first):
+[1.174s]   CMakeLists.txt:31 (find_package)
+[1.174s] 
+[1.175s] [0m
+[1.180s] -- Found gz_utils_vendor: 0.0.5 (/opt/ros/jazzy/share/gz_utils_vendor/cmake)
+[1.190s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.192s] -- Searching for dependencies of gz-utils2
+[1.200s] -- Found gz_math_vendor: 0.0.8 (/opt/ros/jazzy/share/gz_math_vendor/cmake)
+[1.210s] -- Looking for gz-math7 -- found version 7.5.2
+[1.210s] -- Searching for dependencies of gz-math7
+[1.210s] -- Looking for gz-utils2 -- found version 2.2.1
+[1.339s] -- Configuring incomplete, errors occurred!
+[1.342s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.346s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/ur_simulation_gz' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/ur_simulation_gz -- -j22 -l22
