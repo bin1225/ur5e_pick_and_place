@@ -1,0 +1,54 @@
+[0.012s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/ur_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/bin1225/workspaces/ur_gz/src/ur_moveit_config -DCMAKE_INSTALL_PREFIX=/home/bin1225/workspaces/ur_gz/install/ur_moveit_config
+[0.181s] -- The C compiler identification is GNU 13.3.0
+[0.382s] -- The CXX compiler identification is GNU 13.3.0
+[0.547s] -- Detecting C compiler ABI info
+[0.659s] -- Detecting C compiler ABI info - done
+[0.679s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.679s] -- Detecting C compile features
+[0.679s] -- Detecting C compile features - done
+[0.719s] -- Detecting CXX compiler ABI info
+[0.856s] -- Detecting CXX compiler ABI info - done
+[0.862s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.862s] -- Detecting CXX compile features
+[0.863s] -- Detecting CXX compile features - done
+[0.882s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.997s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.179s] -- Configuring done (1.1s)
+[1.183s] -- Generating done (0.0s)
+[1.184s] -- Build files have been written to: /home/bin1225/workspaces/ur_gz/build/ur_moveit_config
+[1.188s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/bin1225/workspaces/ur_gz/src/ur_moveit_config -DCMAKE_INSTALL_PREFIX=/home/bin1225/workspaces/ur_gz/install/ur_moveit_config
+[1.188s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/ur_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/ur_moveit_config -- -j22 -l22
+[1.214s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/ur_moveit_config -- -j22 -l22
+[1.219s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/ur_moveit_config': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/bin1225/workspaces/ur_gz/build/ur_moveit_config
+[1.225s] -- Install configuration: ""
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ament_index/resource_index/package_run_dependencies/ur_moveit_config
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ament_index/resource_index/parent_prefix_path/ur_moveit_config
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/environment/ament_prefix_path.sh
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/environment/ament_prefix_path.dsv
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/environment/path.sh
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/environment/path.dsv
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/local_setup.bash
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/local_setup.sh
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/local_setup.zsh
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/local_setup.dsv
+[1.227s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/package.dsv
+[1.228s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ament_index/resource_index/packages/ur_moveit_config
+[1.228s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/cmake/ur_moveit_configConfig.cmake
+[1.228s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/cmake/ur_moveit_configConfig-version.cmake
+[1.228s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/package.xml
+[1.228s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config
+[1.229s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/chomp_planning.yaml
+[1.229s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/ompl_planning.yaml
+[1.230s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/moveit.rviz
+[1.230s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/moveit_controllers.yaml
+[1.231s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/pilz_industrial_motion_planner_planning.yaml
+[1.232s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/pilz_cartesian_limits.yaml
+[1.232s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/kinematics.yaml
+[1.233s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/joint_limits.yaml
+[1.233s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/config/ur_servo.yaml
+[1.234s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/launch
+[1.234s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/launch/ur_moveit.launch.py
+[1.234s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/srdf
+[1.234s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/srdf/ur_macro.srdf.xacro
+[1.235s] -- Installing: /home/bin1225/workspaces/ur_gz/install/ur_moveit_config/share/ur_moveit_config/srdf/ur.srdf.xacro
+[1.236s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/ur_moveit_config' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/bin1225/workspaces/ur_gz/build/ur_moveit_config

@@ -28,7 +28,7 @@ AMENT_CMAKE_PYTEST_WITH_COVERAGE:BOOL=OFF
 
 //Replace the CMake install command with a custom implementation
 // using symlinks instead of copying resources
-AMENT_CMAKE_SYMLINK_INSTALL:BOOL=1
+AMENT_CMAKE_SYMLINK_INSTALL:BOOL=OFF
 
 //Generate an uninstall target to revert the effects of the install
 // step
@@ -241,15 +241,6 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
-//Compile with a sanitizer. Options are: Address, Memory, MemoryWithOrigins,
-// Undefined, Thread, Leak, 'Address;Undefined', CFI
-GZ_SANITIZER:STRING=
-
-//Deprecated. Please use [GZ_SANITIZER]. Compile with a sanitizer.
-// Options are: Address, Memory, MemoryWithOrigins, Undefined,
-// Thread, Leak, 'Address;Undefined', CFI
-IGN_SANITIZER:STRING=
-
 //Name of the computer/site where compile is being run
 SITE:STRING=BOOK-NSPE08QJBM
 
@@ -306,33 +297,6 @@ ament_cmake_test_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_test/cmake
 
 //The directory containing a CMake configuration file for ament_cmake_version.
 ament_cmake_version_DIR:PATH=/opt/ros/jazzy/share/ament_cmake_version/cmake
-
-//The directory containing a CMake configuration file for gz-cmake3.
-gz-cmake3_DIR:PATH=/opt/ros/jazzy/opt/gz_cmake_vendor/share/cmake/gz-cmake3
-
-//The directory containing a CMake configuration file for gz-cmake.
-gz-cmake_DIR:PATH=/opt/ros/jazzy/opt/gz_cmake_vendor/extra_cmake/lib/cmake/gz-cmake
-
-//The directory containing a CMake configuration file for gz-math7.
-gz-math7_DIR:PATH=/opt/ros/jazzy/opt/gz_math_vendor/lib/cmake/gz-math7
-
-//The directory containing a CMake configuration file for gz-math.
-gz-math_DIR:PATH=/opt/ros/jazzy/opt/gz_math_vendor/extra_cmake/lib/cmake/gz-math
-
-//The directory containing a CMake configuration file for gz-utils2.
-gz-utils2_DIR:PATH=/opt/ros/jazzy/opt/gz_utils_vendor/lib/cmake/gz-utils2
-
-//The directory containing a CMake configuration file for gz-utils.
-gz-utils_DIR:PATH=/opt/ros/jazzy/opt/gz_utils_vendor/extra_cmake/lib/cmake/gz-utils
-
-//The directory containing a CMake configuration file for gz_cmake_vendor.
-gz_cmake_vendor_DIR:PATH=/opt/ros/jazzy/share/gz_cmake_vendor/cmake
-
-//The directory containing a CMake configuration file for gz_math_vendor.
-gz_math_vendor_DIR:PATH=/opt/ros/jazzy/share/gz_math_vendor/cmake
-
-//The directory containing a CMake configuration file for gz_utils_vendor.
-gz_utils_vendor_DIR:PATH=/opt/ros/jazzy/share/gz_utils_vendor/cmake
 
 //The directory containing a CMake configuration file for launch_testing_ament_cmake.
 launch_testing_ament_cmake_DIR:PATH=/opt/ros/jazzy/share/launch_testing_ament_cmake/cmake
@@ -515,6 +479,4 @@ _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;12;3;64;32;;cpython-312-x86_64
 _Python3_INTERPRETER_SIGNATURE:INTERNAL=4c8bfa8951e99fa32e4000a94f8c04a2
 //NumPy reason failure
 _Python3_NumPy_REASON_FAILURE:INTERNAL=
-//Index for unique symlink install targets
-__AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=0
 
