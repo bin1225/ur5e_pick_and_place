@@ -1,0 +1,9 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/move_test_2_cpp_node.dir/src/move_test_2.cpp.o[0m
+[01m[K/home/bin1225/workspaces/ur_gz/src/move_test_cpp/src/move_test_2.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+    1 | #include [01;31m[K<rclcpp/rclcpp.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[ 75%] Built target move_test_cpp_node
+gmake[2]: *** [CMakeFiles/move_test_2_cpp_node.dir/build.make:76: CMakeFiles/move_test_2_cpp_node.dir/src/move_test_2.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/move_test_2_cpp_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

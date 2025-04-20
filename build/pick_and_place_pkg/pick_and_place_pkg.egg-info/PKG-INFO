@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pick-and-place-pkg
+Version: 0.0.1
+Summary: Pick and place node for UR5e + Robotiq
+Maintainer: your_name
+Maintainer-email: your@email.com
+License: MIT

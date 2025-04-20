@@ -1,0 +1,3 @@
+[0.013s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake /home/bin1225/workspaces/ur_gz/src/move_test_cpp -DCMAKE_INSTALL_PREFIX=/home/bin1225/workspaces/ur_gz/install/move_test_cpp
+[0.224s] -- The C compiler identification is GNU 13.3.0
+[0.416s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake /home/bin1225/workspaces/ur_gz/src/move_test_cpp -DCMAKE_INSTALL_PREFIX=/home/bin1225/workspaces/ur_gz/install/move_test_cpp

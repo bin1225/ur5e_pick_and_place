@@ -1,0 +1,20 @@
+running egg_info
+writing ../build/pick_and_place_pkg/pick_and_place_pkg.egg-info/PKG-INFO
+writing dependency_links to ../build/pick_and_place_pkg/pick_and_place_pkg.egg-info/dependency_links.txt
+writing entry points to ../build/pick_and_place_pkg/pick_and_place_pkg.egg-info/entry_points.txt
+writing requirements to ../build/pick_and_place_pkg/pick_and_place_pkg.egg-info/requires.txt
+writing top-level names to ../build/pick_and_place_pkg/pick_and_place_pkg.egg-info/top_level.txt
+reading manifest file '../build/pick_and_place_pkg/pick_and_place_pkg.egg-info/SOURCES.txt'
+writing manifest file '../build/pick_and_place_pkg/pick_and_place_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg/lib/python3.12/site-packages/pick_and_place_pkg-0.0.1-py3.12.egg-info' (and everything under it)
+Copying ../build/pick_and_place_pkg/pick_and_place_pkg.egg-info to /home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg/lib/python3.12/site-packages/pick_and_place_pkg-0.0.1-py3.12.egg-info
+running install_scripts
+Installing move_test script to /home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg/lib/pick_and_place_pkg
+Installing pick_and_place script to /home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg/lib/pick_and_place_pkg
+writing list of installed files to '/home/bin1225/workspaces/ur_gz/src/build/pick_and_place_pkg/install.log'
