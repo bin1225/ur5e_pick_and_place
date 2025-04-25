@@ -1,0 +1,52 @@
+[ 50%] Built target move_test_2_cpp_node
+[ 50%] Built target move_test_cpp_node
+[ 75%] Built target pick_and_place_cpp_node
+[ 87%] [32mBuilding CXX object CMakeFiles/pick_and_place_arg_cpp_node.dir/src/pick_and_place_arg.cpp.o[0m
+[01m[K/home/bin1225/workspaces/ur_gz/src/move_test_cpp/src/pick_and_place_arg.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int, char**)[m[K’:
+[01m[K/home/bin1225/workspaces/ur_gz/src/move_test_cpp/src/pick_and_place_arg.cpp:48:50:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >::Float64MultiArray_(<brace-enclosed initializer list>)[m[K’
+   48 |   std_msgs::msg::Float64MultiArray open_cmd{{0.1}[01;31m[K}[m[K;
+      |                                                  [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/float64_multi_array.hpp:7[m[K,
+                 from [01m[K/home/bin1225/workspaces/ur_gz/src/move_test_cpp/src/pick_and_place_arg.cpp:4[m[K:
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:49:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float64MultiArray_<ContainerAllocator>::[01;32m[KFloat64MultiArray_[m[K(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [35m[K[with ContainerAllocator = std::allocator<void>][m[K[m[K’
+   49 |   explicit [01;36m[KFloat64MultiArray_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:49:58:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::allocator<void>&[m[K’
+   49 |   explicit Float64MultiArray_([01;36m[Kconst ContainerAllocator & _alloc[m[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:43:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float64MultiArray_<ContainerAllocator>::[01;32m[KFloat64MultiArray_[m[K(rosidl_runtime_cpp::MessageInitialization) [35m[K[with ContainerAllocator = std::allocator<void>][m[K[m[K’
+   43 |   explicit [01;36m[KFloat64MultiArray_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:43:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Krosidl_runtime_cpp::MessageInitialization[m[K’
+   43 |   explicit Float64MultiArray_([01;36m[Krosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL[m[K)
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:39:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >::[01;32m[KFloat64MultiArray_[m[K(const std_msgs::msg::Float64MultiArray_<std::allocator<void> >&)[m[K’
+   39 | struct [01;36m[KFloat64MultiArray_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:39:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std_msgs::msg::Float64MultiArray_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:39:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >::[01;32m[KFloat64MultiArray_[m[K(std_msgs::msg::Float64MultiArray_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:39:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >&&[m[K’
+[01m[K/home/bin1225/workspaces/ur_gz/src/move_test_cpp/src/pick_and_place_arg.cpp:67:51:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >::Float64MultiArray_(<brace-enclosed initializer list>)[m[K’
+   67 |   std_msgs::msg::Float64MultiArray close_cmd{{0.7}[01;31m[K}[m[K;
+      |                                                   [01;31m[K^[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:49:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float64MultiArray_<ContainerAllocator>::[01;32m[KFloat64MultiArray_[m[K(const ContainerAllocator&, rosidl_runtime_cpp::MessageInitialization) [35m[K[with ContainerAllocator = std::allocator<void>][m[K[m[K’
+   49 |   explicit [01;36m[KFloat64MultiArray_[m[K(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:49:58:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::allocator<void>&[m[K’
+   49 |   explicit Float64MultiArray_([01;36m[Kconst ContainerAllocator & _alloc[m[K, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:43:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float64MultiArray_<ContainerAllocator>::[01;32m[KFloat64MultiArray_[m[K(rosidl_runtime_cpp::MessageInitialization) [35m[K[with ContainerAllocator = std::allocator<void>][m[K[m[K’
+   43 |   explicit [01;36m[KFloat64MultiArray_[m[K(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+      |            [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:43:73:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Krosidl_runtime_cpp::MessageInitialization[m[K’
+   43 |   explicit Float64MultiArray_([01;36m[Krosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL[m[K)
+      |                               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:39:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >::[01;32m[KFloat64MultiArray_[m[K(const std_msgs::msg::Float64MultiArray_<std::allocator<void> >&)[m[K’
+   39 | struct [01;36m[KFloat64MultiArray_[m[K
+      |        [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:39:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std_msgs::msg::Float64MultiArray_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:39:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >::[01;32m[KFloat64MultiArray_[m[K(std_msgs::msg::Float64MultiArray_<std::allocator<void> >&&)[m[K’
+[01m[K/opt/ros/jazzy/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:39:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd_msgs::msg::Float64MultiArray_<std::allocator<void> >&&[m[K’
+gmake[2]: *** [CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make:76: CMakeFiles/pick_and_place_arg_cpp_node.dir/src/pick_and_place_arg.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/pick_and_place_arg_cpp_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

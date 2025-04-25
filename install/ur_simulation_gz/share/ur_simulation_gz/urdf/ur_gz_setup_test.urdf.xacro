@@ -1,1 +1,69 @@
-/home/bin1225/workspaces/ur_gz/src/ur_simulation_gz/ur_simulation_gz/urdf/ur_gz_setup_test.urdf.xacro
+<?xml version="1.0"?>
+<robot name="ur5e_simple" xmlns="http://www.ros.org/wiki/robot_model" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- 1 base_link -->
+  <link name="base_link"/>
+
+  <!-- 2 shoulder_pan_joint -->
+  <link name="shoulder_link"/>
+  <joint name="shoulder_pan_joint" type="continuous">
+    <parent link="base_link"/>
+    <child  link="shoulder_link"/>
+    <axis  xyz="0 0 1"/>
+  </joint>
+
+  <!-- 3 shoulder_lift_joint -->
+  <link name="upper_arm_link"/>
+  <joint name="shoulder_lift_joint" type="continuous">
+    <parent link="shoulder_link"/>
+    <child  link="upper_arm_link"/>
+    <axis  xyz="0 1 0"/>
+  </joint>
+
+  <!-- 4 elbow_joint -->
+  <link name="forearm_link"/>
+  <joint name="elbow_joint" type="continuous">
+    <parent link="upper_arm_link"/>
+    <child  link="forearm_link"/>
+    <axis  xyz="0 1 0"/>
+  </joint>
+
+  <!-- 5 wrist_1_joint -->
+  <link name="wrist_1_link"/>
+  <joint name="wrist_1_joint" type="continuous">
+    <parent link="forearm_link"/>
+    <child  link="wrist_1_link"/>
+    <axis  xyz="0 1 0"/>
+  </joint>
+
+  <!-- 6 wrist_2_joint -->
+  <link name="wrist_2_link"/>
+  <joint name="wrist_2_joint" type="continuous">
+    <parent link="wrist_1_link"/>
+    <child  link="wrist_2_link"/>
+    <axis  xyz="0 0 1"/>
+  </joint>
+
+  <!-- 7 wrist_3_joint -->
+  <link name="wrist_3_link"/>
+  <joint name="wrist_3_joint" type="continuous">
+    <parent link="wrist_2_link"/>
+    <child  link="wrist_3_link"/>
+    <axis  xyz="0 1 0"/>
+  </joint>
+
+  <!-- 8 tool0 (end effector mounting) -->
+  <link name="tool0"/>
+  <joint name="tool0_joint" type="fixed">
+    <parent link="wrist_3_link"/>
+    <child  link="tool0"/>
+  </joint>
+
+  <!-- 9 gripper (rigidly attached) -->
+  <link name="gripper"/>
+  <joint name="gripper_fixed_joint" type="fixed">
+    <parent link="tool0"/>
+    <child  link="gripper"/>
+  </joint>
+
+</robot>

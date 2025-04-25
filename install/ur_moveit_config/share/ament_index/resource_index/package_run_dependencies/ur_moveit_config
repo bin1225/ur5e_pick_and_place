@@ -1,1 +1,1 @@
-/home/bin1225/workspaces/ur_gz/build/ur_moveit_config/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/ur_moveit_config
+moveit_configs_utils;moveit_kinematics;moveit_planners;moveit_planners_chomp;moveit_ros_move_group;moveit_ros_visualization;moveit_servo;moveit_simple_controller_manager;ur_description;warehouse_ros_sqlite;xacro

@@ -1,0 +1,31 @@
+[0.026s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/move_test_cpp -- -j22 -l22
+[0.076s] [ 25%] Built target move_test_cpp_node
+[0.077s] [ 50%] Built target move_test_2_cpp_node
+[0.077s] [ 62%] [32mBuilding CXX object CMakeFiles/pick_and_place_arg_cpp_node.dir/src/pick_and_place_arg.cpp.o[0m
+[0.078s] [ 87%] Built target pick_and_place_cpp_node
+[8.668s] [100%] [32m[1mLinking CXX executable pick_and_place_arg_cpp_node[0m
+[9.281s] [100%] Built target pick_and_place_arg_cpp_node
+[9.294s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/move_test_cpp -- -j22 -l22
+[9.296s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake --install /home/bin1225/workspaces/ur_gz/build/move_test_cpp
+[9.303s] -- Install configuration: ""
+[9.303s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/move_test_cpp_node
+[9.303s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/move_test_2_cpp_node
+[9.303s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/pick_and_place_cpp_node
+[9.303s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/pick_and_place_arg_cpp_node
+[9.305s] -- Set non-toolchain portion of runtime path of "/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/pick_and_place_arg_cpp_node" to ""
+[9.305s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/package_run_dependencies/move_test_cpp
+[9.306s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/parent_prefix_path/move_test_cpp
+[9.306s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/ament_prefix_path.sh
+[9.306s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/ament_prefix_path.dsv
+[9.306s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/path.sh
+[9.306s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/path.dsv
+[9.306s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.bash
+[9.306s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.sh
+[9.307s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.zsh
+[9.307s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.dsv
+[9.307s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/package.dsv
+[9.307s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/packages/move_test_cpp
+[9.307s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/cmake/move_test_cppConfig.cmake
+[9.307s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/cmake/move_test_cppConfig-version.cmake
+[9.307s] -- Up-to-date: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/package.xml
+[9.310s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake --install /home/bin1225/workspaces/ur_gz/build/move_test_cpp

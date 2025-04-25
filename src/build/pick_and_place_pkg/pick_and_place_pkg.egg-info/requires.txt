@@ -1,3 +1,0 @@
-moveit_py
-pyyaml
-setuptools

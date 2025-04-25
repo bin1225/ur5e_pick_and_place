@@ -1325,4 +1325,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/move_test_cpp_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/move_test_cpp_node.dir/DependInfo.cmake"
   "CMakeFiles/move_test_2_cpp_node.dir/DependInfo.cmake"
+  "CMakeFiles/pick_and_place_cpp_node.dir/DependInfo.cmake"
+  "CMakeFiles/pick_and_place_arg_cpp_node.dir/DependInfo.cmake"
   )

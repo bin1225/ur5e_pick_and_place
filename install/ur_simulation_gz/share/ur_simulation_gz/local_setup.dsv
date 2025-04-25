@@ -1,1 +1,2 @@
-/home/bin1225/workspaces/ur_gz/build/ur_simulation_gz/ament_cmake_environment_hooks/local_setup.dsv
+source;share/ur_simulation_gz/environment/ament_prefix_path.sh
+source;share/ur_simulation_gz/environment/path.sh

@@ -31,11 +31,32 @@ ament_target_dependencies(move_test_2_cpp_node
   geometry_msgs
 )
 
-# 설치
-install(
-  TARGETS
-    move_test_cpp_node
-    move_test_2_cpp_node
+# pick and place 노드
+add_executable(pick_and_place_cpp_node
+  src/pick_and_place.cpp
+)
+ament_target_dependencies(pick_and_place_cpp_node
+  rclcpp
+  moveit_ros_planning_interface
+  geometry_msgs
+  std_msgs
+)
+# pick and place arg 노드
+add_executable(pick_and_place_arg_cpp_node
+  src/pick_and_place_arg.cpp
+)
+ament_target_dependencies(pick_and_place_arg_cpp_node
+  rclcpp
+  moveit_ros_planning_interface
+  geometry_msgs
+  std_msgs
+)
+
+install(TARGETS
+  move_test_cpp_node
+  move_test_2_cpp_node
+  pick_and_place_cpp_node
+  pick_and_place_arg_cpp_node
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 

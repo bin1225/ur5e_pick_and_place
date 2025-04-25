@@ -223,6 +223,32 @@ move_test_2_cpp_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_2_cpp_node.dir/build.make CMakeFiles/move_test_2_cpp_node.dir/build
 .PHONY : move_test_2_cpp_node/fast
 
+#=============================================================================
+# Target rules for targets named pick_and_place_cpp_node
+
+# Build rule for target.
+pick_and_place_cpp_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_and_place_cpp_node
+.PHONY : pick_and_place_cpp_node
+
+# fast build rule for target.
+pick_and_place_cpp_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_cpp_node.dir/build.make CMakeFiles/pick_and_place_cpp_node.dir/build
+.PHONY : pick_and_place_cpp_node/fast
+
+#=============================================================================
+# Target rules for targets named pick_and_place_arg_cpp_node
+
+# Build rule for target.
+pick_and_place_arg_cpp_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_and_place_arg_cpp_node
+.PHONY : pick_and_place_arg_cpp_node
+
+# fast build rule for target.
+pick_and_place_arg_cpp_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make CMakeFiles/pick_and_place_arg_cpp_node.dir/build
+.PHONY : pick_and_place_arg_cpp_node/fast
+
 src/move_test.o: src/move_test.cpp.o
 .PHONY : src/move_test.o
 
@@ -271,6 +297,54 @@ src/move_test_2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_2_cpp_node.dir/build.make CMakeFiles/move_test_2_cpp_node.dir/src/move_test_2.cpp.s
 .PHONY : src/move_test_2.cpp.s
 
+src/pick_and_place.o: src/pick_and_place.cpp.o
+.PHONY : src/pick_and_place.o
+
+# target to build an object file
+src/pick_and_place.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_cpp_node.dir/build.make CMakeFiles/pick_and_place_cpp_node.dir/src/pick_and_place.cpp.o
+.PHONY : src/pick_and_place.cpp.o
+
+src/pick_and_place.i: src/pick_and_place.cpp.i
+.PHONY : src/pick_and_place.i
+
+# target to preprocess a source file
+src/pick_and_place.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_cpp_node.dir/build.make CMakeFiles/pick_and_place_cpp_node.dir/src/pick_and_place.cpp.i
+.PHONY : src/pick_and_place.cpp.i
+
+src/pick_and_place.s: src/pick_and_place.cpp.s
+.PHONY : src/pick_and_place.s
+
+# target to generate assembly for a file
+src/pick_and_place.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_cpp_node.dir/build.make CMakeFiles/pick_and_place_cpp_node.dir/src/pick_and_place.cpp.s
+.PHONY : src/pick_and_place.cpp.s
+
+src/pick_and_place_arg.o: src/pick_and_place_arg.cpp.o
+.PHONY : src/pick_and_place_arg.o
+
+# target to build an object file
+src/pick_and_place_arg.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make CMakeFiles/pick_and_place_arg_cpp_node.dir/src/pick_and_place_arg.cpp.o
+.PHONY : src/pick_and_place_arg.cpp.o
+
+src/pick_and_place_arg.i: src/pick_and_place_arg.cpp.i
+.PHONY : src/pick_and_place_arg.i
+
+# target to preprocess a source file
+src/pick_and_place_arg.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make CMakeFiles/pick_and_place_arg_cpp_node.dir/src/pick_and_place_arg.cpp.i
+.PHONY : src/pick_and_place_arg.cpp.i
+
+src/pick_and_place_arg.s: src/pick_and_place_arg.cpp.s
+.PHONY : src/pick_and_place_arg.s
+
+# target to generate assembly for a file
+src/pick_and_place_arg.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make CMakeFiles/pick_and_place_arg_cpp_node.dir/src/pick_and_place_arg.cpp.s
+.PHONY : src/pick_and_place_arg.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -288,12 +362,20 @@ help:
 	@echo "... uninstall"
 	@echo "... move_test_2_cpp_node"
 	@echo "... move_test_cpp_node"
+	@echo "... pick_and_place_arg_cpp_node"
+	@echo "... pick_and_place_cpp_node"
 	@echo "... src/move_test.o"
 	@echo "... src/move_test.i"
 	@echo "... src/move_test.s"
 	@echo "... src/move_test_2.o"
 	@echo "... src/move_test_2.i"
 	@echo "... src/move_test_2.s"
+	@echo "... src/pick_and_place.o"
+	@echo "... src/pick_and_place.i"
+	@echo "... src/pick_and_place.s"
+	@echo "... src/pick_and_place_arg.o"
+	@echo "... src/pick_and_place_arg.i"
+	@echo "... src/pick_and_place_arg.s"
 .PHONY : help
 
 

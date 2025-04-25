@@ -1,0 +1,4 @@
+[ 25%] Built target move_test_2_cpp_node
+[ 50%] Built target move_test_cpp_node
+[ 75%] Built target pick_and_place_cpp_node
+[ 87%] [32mBuilding CXX object CMakeFiles/pick_and_place_arg_cpp_node.dir/src/pick_and_place_arg.cpp.o[0m

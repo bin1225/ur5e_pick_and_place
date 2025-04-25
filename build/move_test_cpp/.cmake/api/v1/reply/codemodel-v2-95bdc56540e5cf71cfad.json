@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-1c0c9e23b4f4cc9c65b0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "move_test_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "move_test_2_cpp_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_test_2_cpp_node-eb78f485bbac3efd6dd2.json",
+					"name" : "move_test_2_cpp_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "move_test_cpp_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_test_cpp_node-328d52be3f4021e3782c.json",
+					"name" : "move_test_cpp_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "move_test_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-move_test_cpp_uninstall-5392e6dcaec1b4d20265.json",
+					"name" : "move_test_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pick_and_place_arg_cpp_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pick_and_place_arg_cpp_node-f85e90f26c1069b13a87.json",
+					"name" : "pick_and_place_arg_cpp_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pick_and_place_cpp_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pick_and_place_cpp_node-663a0f3c4dcd4f22b6ec.json",
+					"name" : "pick_and_place_cpp_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c470900098400ec0ba3b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bin1225/workspaces/ur_gz/build/move_test_cpp",
+		"source" : "/home/bin1225/workspaces/ur_gz/src/move_test_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

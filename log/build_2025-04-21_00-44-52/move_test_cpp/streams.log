@@ -1,0 +1,75 @@
+[0.011s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake /home/bin1225/workspaces/ur_gz/src/move_test_cpp -DCMAKE_INSTALL_PREFIX=/home/bin1225/workspaces/ur_gz/install/move_test_cpp
+[0.074s] -- The C compiler identification is GNU 13.3.0
+[0.379s] -- The CXX compiler identification is GNU 13.3.0
+[0.623s] -- Detecting C compiler ABI info
+[0.726s] -- Detecting C compiler ABI info - done
+[0.731s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.732s] -- Detecting C compile features
+[0.732s] -- Detecting C compile features - done
+[0.759s] -- Detecting CXX compiler ABI info
+[0.901s] -- Detecting CXX compiler ABI info - done
+[0.908s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.908s] -- Detecting CXX compile features
+[0.908s] -- Detecting CXX compile features - done
+[0.910s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.030s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.126s] -- Found rclcpp: 28.1.8 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.279s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.292s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.307s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.327s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.405s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.407s] -- Found rmw_fastrtps_cpp: 8.4.2 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.470s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.577s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.653s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.805s] -- Found moveit_ros_planning_interface: 2.12.2 (/opt/ros/jazzy/share/moveit_ros_planning_interface/cmake)
+[1.936s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: date_time filesystem program_options system thread 
+[2.174s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[2.819s] -- Found parameter_traits: 0.4.0 (/opt/ros/jazzy/share/parameter_traits/cmake)
+[2.830s] -- Found rclcpp_lifecycle: 28.1.8 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[2.860s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: filesystem 
+[2.928s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.928s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.063s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread chrono 
+[3.104s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: thread system filesystem regex date_time program_options 
+[3.128s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake (found version "1.83.0") found components: system filesystem date_time program_options thread 
+[3.226s] -- Configuring done (3.2s)
+[3.263s] -- Generating done (0.0s)
+[3.272s] -- Build files have been written to: /home/bin1225/workspaces/ur_gz/build/move_test_cpp
+[3.286s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake /home/bin1225/workspaces/ur_gz/src/move_test_cpp -DCMAKE_INSTALL_PREFIX=/home/bin1225/workspaces/ur_gz/install/move_test_cpp
+[3.287s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/move_test_cpp -- -j22 -l22
+[3.323s] [ 50%] [32mBuilding CXX object CMakeFiles/pick_and_place_cpp_node.dir/src/pick_and_place.cpp.o[0m
+[3.323s] [ 50%] [32mBuilding CXX object CMakeFiles/move_test_2_cpp_node.dir/src/move_test_2.cpp.o[0m
+[3.323s] [ 50%] [32mBuilding CXX object CMakeFiles/move_test_cpp_node.dir/src/move_test.cpp.o[0m
+[9.062s] [ 66%] [32m[1mLinking CXX executable move_test_2_cpp_node[0m
+[9.099s] [ 83%] [32m[1mLinking CXX executable move_test_cpp_node[0m
+[9.349s] [ 83%] Built target move_test_2_cpp_node
+[9.370s] [ 83%] Built target move_test_cpp_node
+[10.052s] [100%] [32m[1mLinking CXX executable pick_and_place_cpp_node[0m
+[10.342s] [100%] Built target pick_and_place_cpp_node
+[10.348s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake --build /home/bin1225/workspaces/ur_gz/build/move_test_cpp -- -j22 -l22
+[10.349s] Invoking command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake --install /home/bin1225/workspaces/ur_gz/build/move_test_cpp
+[10.355s] -- Install configuration: ""
+[10.355s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/move_test_cpp_node
+[10.355s] -- Set non-toolchain portion of runtime path of "/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/move_test_cpp_node" to ""
+[10.356s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/move_test_2_cpp_node
+[10.356s] -- Set non-toolchain portion of runtime path of "/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/move_test_2_cpp_node" to ""
+[10.356s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/pick_and_place_cpp_node
+[10.357s] -- Set non-toolchain portion of runtime path of "/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/pick_and_place_cpp_node" to ""
+[10.357s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/package_run_dependencies/move_test_cpp
+[10.357s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/parent_prefix_path/move_test_cpp
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/ament_prefix_path.sh
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/ament_prefix_path.dsv
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/path.sh
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/path.dsv
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.bash
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.sh
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.zsh
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.dsv
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/package.dsv
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/packages/move_test_cpp
+[10.358s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/cmake/move_test_cppConfig.cmake
+[10.359s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/cmake/move_test_cppConfig-version.cmake
+[10.359s] -- Installing: /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/package.xml
+[10.359s] Invoked command in '/home/bin1225/workspaces/ur_gz/build/move_test_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/bin1225/workspaces/ur_gz/src/install/pick_and_place_pkg:/home/bin1225/workspaces/ur_gz/install/pick_and_place_pkg:/opt/ros/jazzy /usr/bin/cmake --install /home/bin1225/workspaces/ur_gz/build/move_test_cpp
