@@ -149,6 +149,6 @@ def generate_launch_description():
             default_value=PathJoinSubstitution([FindPackageShare("ur_description"), "rviz", "view_robot.rviz"]),
             description="RViz config file"),
         DeclareLaunchArgument("gazebo_gui", default_value="true", description="Gazebo GUI?"),
-        DeclareLaunchArgument("world_file", default_value="empty.sdf", description="Gazebo world file"),
+        DeclareLaunchArgument("world_file", default_value="/home/bin1225/workspaces/ur_gz/src/ur_simulation_gz/worlds/pick_and_place_world.sdf", description="Gazebo world file"),
     ]
     return LaunchDescription(declared_arguments + [OpaqueFunction(function=launch_setup)])

@@ -161,6 +161,16 @@ int main(int argc, char **argv)
   publishGripperCmd(gripper_pub, 0.1);
   RCLCPP_INFO(logger, "Object released – task complete");
 
+  geometry_msgs::msg::PoseStamped home_pose = pick_pose;
+  place_pose.pose.position.x = place_x;
+  place_pose.pose.position.y = place_y;
+  place_pose.pose.position.z = place_z+0.5;
+  if (!goToPose(move_group, place_pose, logger))
+  {
+    RCLCPP_ERROR(logger, "Failed to reach place pose");
+    rclcpp::shutdown();
+    return EXIT_FAILURE;
+  }
   rclcpp::shutdown();
   return EXIT_SUCCESS;
 }
