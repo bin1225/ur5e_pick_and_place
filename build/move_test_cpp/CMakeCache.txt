@@ -547,6 +547,9 @@ osqp_DIR:PATH=/opt/ros/jazzy/lib/cmake/osqp
 //The directory containing a CMake configuration file for parameter_traits.
 parameter_traits_DIR:PATH=/opt/ros/jazzy/share/parameter_traits/cmake
 
+//Dependencies for the target
+pick_place_executor_LIB_DEPENDS:STATIC=general;rclcpp::rclcpp;general;moveit_ros_planning_interface::moveit_common_planning_interface_objects;general;moveit_ros_planning_interface::moveit_planning_scene_interface;general;moveit_ros_planning_interface::moveit_move_group_interface;general;geometry_msgs::geometry_msgs__rosidl_generator_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_c;general;geometry_msgs::geometry_msgs__rosidl_typesupport_fastrtps_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_introspection_cpp;general;geometry_msgs::geometry_msgs__rosidl_typesupport_cpp;general;geometry_msgs::geometry_msgs__rosidl_generator_py;general;std_msgs::std_msgs__rosidl_generator_c;general;std_msgs::std_msgs__rosidl_typesupport_fastrtps_c;general;std_msgs::std_msgs__rosidl_typesupport_fastrtps_cpp;general;std_msgs::std_msgs__rosidl_typesupport_introspection_c;general;std_msgs::std_msgs__rosidl_typesupport_c;general;std_msgs::std_msgs__rosidl_typesupport_introspection_cpp;general;std_msgs::std_msgs__rosidl_typesupport_cpp;general;std_msgs::std_msgs__rosidl_generator_py;general;tf2::tf2;
+
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 

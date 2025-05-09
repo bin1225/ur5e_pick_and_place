@@ -198,30 +198,17 @@ move_test_cpp_uninstall/fast:
 .PHONY : move_test_cpp_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named move_test_cpp_node
+# Target rules for targets named pick_place_executor
 
 # Build rule for target.
-move_test_cpp_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_test_cpp_node
-.PHONY : move_test_cpp_node
+pick_place_executor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pick_place_executor
+.PHONY : pick_place_executor
 
 # fast build rule for target.
-move_test_cpp_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_cpp_node.dir/build.make CMakeFiles/move_test_cpp_node.dir/build
-.PHONY : move_test_cpp_node/fast
-
-#=============================================================================
-# Target rules for targets named move_test_2_cpp_node
-
-# Build rule for target.
-move_test_2_cpp_node: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move_test_2_cpp_node
-.PHONY : move_test_2_cpp_node
-
-# fast build rule for target.
-move_test_2_cpp_node/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_2_cpp_node.dir/build.make CMakeFiles/move_test_2_cpp_node.dir/build
-.PHONY : move_test_2_cpp_node/fast
+pick_place_executor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_place_executor.dir/build.make CMakeFiles/pick_place_executor.dir/build
+.PHONY : pick_place_executor/fast
 
 #=============================================================================
 # Target rules for targets named pick_and_place_cpp_node
@@ -249,53 +236,42 @@ pick_and_place_arg_cpp_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make CMakeFiles/pick_and_place_arg_cpp_node.dir/build
 .PHONY : pick_and_place_arg_cpp_node/fast
 
-src/move_test.o: src/move_test.cpp.o
-.PHONY : src/move_test.o
+#=============================================================================
+# Target rules for targets named demo_controller
+
+# Build rule for target.
+demo_controller: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 demo_controller
+.PHONY : demo_controller
+
+# fast build rule for target.
+demo_controller/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_controller.dir/build.make CMakeFiles/demo_controller.dir/build
+.PHONY : demo_controller/fast
+
+src/demo_controller.o: src/demo_controller.cpp.o
+.PHONY : src/demo_controller.o
 
 # target to build an object file
-src/move_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_cpp_node.dir/build.make CMakeFiles/move_test_cpp_node.dir/src/move_test.cpp.o
-.PHONY : src/move_test.cpp.o
+src/demo_controller.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_controller.dir/build.make CMakeFiles/demo_controller.dir/src/demo_controller.cpp.o
+.PHONY : src/demo_controller.cpp.o
 
-src/move_test.i: src/move_test.cpp.i
-.PHONY : src/move_test.i
-
-# target to preprocess a source file
-src/move_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_cpp_node.dir/build.make CMakeFiles/move_test_cpp_node.dir/src/move_test.cpp.i
-.PHONY : src/move_test.cpp.i
-
-src/move_test.s: src/move_test.cpp.s
-.PHONY : src/move_test.s
-
-# target to generate assembly for a file
-src/move_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_cpp_node.dir/build.make CMakeFiles/move_test_cpp_node.dir/src/move_test.cpp.s
-.PHONY : src/move_test.cpp.s
-
-src/move_test_2.o: src/move_test_2.cpp.o
-.PHONY : src/move_test_2.o
-
-# target to build an object file
-src/move_test_2.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_2_cpp_node.dir/build.make CMakeFiles/move_test_2_cpp_node.dir/src/move_test_2.cpp.o
-.PHONY : src/move_test_2.cpp.o
-
-src/move_test_2.i: src/move_test_2.cpp.i
-.PHONY : src/move_test_2.i
+src/demo_controller.i: src/demo_controller.cpp.i
+.PHONY : src/demo_controller.i
 
 # target to preprocess a source file
-src/move_test_2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_2_cpp_node.dir/build.make CMakeFiles/move_test_2_cpp_node.dir/src/move_test_2.cpp.i
-.PHONY : src/move_test_2.cpp.i
+src/demo_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_controller.dir/build.make CMakeFiles/demo_controller.dir/src/demo_controller.cpp.i
+.PHONY : src/demo_controller.cpp.i
 
-src/move_test_2.s: src/move_test_2.cpp.s
-.PHONY : src/move_test_2.s
+src/demo_controller.s: src/demo_controller.cpp.s
+.PHONY : src/demo_controller.s
 
 # target to generate assembly for a file
-src/move_test_2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/move_test_2_cpp_node.dir/build.make CMakeFiles/move_test_2_cpp_node.dir/src/move_test_2.cpp.s
-.PHONY : src/move_test_2.cpp.s
+src/demo_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_controller.dir/build.make CMakeFiles/demo_controller.dir/src/demo_controller.cpp.s
+.PHONY : src/demo_controller.cpp.s
 
 src/pick_and_place.o: src/pick_and_place.cpp.o
 .PHONY : src/pick_and_place.o
@@ -345,6 +321,30 @@ src/pick_and_place_arg.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make CMakeFiles/pick_and_place_arg_cpp_node.dir/src/pick_and_place_arg.cpp.s
 .PHONY : src/pick_and_place_arg.cpp.s
 
+src/pick_place_executor.o: src/pick_place_executor.cpp.o
+.PHONY : src/pick_place_executor.o
+
+# target to build an object file
+src/pick_place_executor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_place_executor.dir/build.make CMakeFiles/pick_place_executor.dir/src/pick_place_executor.cpp.o
+.PHONY : src/pick_place_executor.cpp.o
+
+src/pick_place_executor.i: src/pick_place_executor.cpp.i
+.PHONY : src/pick_place_executor.i
+
+# target to preprocess a source file
+src/pick_place_executor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_place_executor.dir/build.make CMakeFiles/pick_place_executor.dir/src/pick_place_executor.cpp.i
+.PHONY : src/pick_place_executor.cpp.i
+
+src/pick_place_executor.s: src/pick_place_executor.cpp.s
+.PHONY : src/pick_place_executor.s
+
+# target to generate assembly for a file
+src/pick_place_executor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_place_executor.dir/build.make CMakeFiles/pick_place_executor.dir/src/pick_place_executor.cpp.s
+.PHONY : src/pick_place_executor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -360,22 +360,22 @@ help:
 	@echo "... test"
 	@echo "... move_test_cpp_uninstall"
 	@echo "... uninstall"
-	@echo "... move_test_2_cpp_node"
-	@echo "... move_test_cpp_node"
+	@echo "... demo_controller"
 	@echo "... pick_and_place_arg_cpp_node"
 	@echo "... pick_and_place_cpp_node"
-	@echo "... src/move_test.o"
-	@echo "... src/move_test.i"
-	@echo "... src/move_test.s"
-	@echo "... src/move_test_2.o"
-	@echo "... src/move_test_2.i"
-	@echo "... src/move_test_2.s"
+	@echo "... pick_place_executor"
+	@echo "... src/demo_controller.o"
+	@echo "... src/demo_controller.i"
+	@echo "... src/demo_controller.s"
 	@echo "... src/pick_and_place.o"
 	@echo "... src/pick_and_place.i"
 	@echo "... src/pick_and_place.s"
 	@echo "... src/pick_and_place_arg.o"
 	@echo "... src/pick_and_place_arg.i"
 	@echo "... src/pick_and_place_arg.s"
+	@echo "... src/pick_place_executor.o"
+	@echo "... src/pick_place_executor.i"
+	@echo "... src/pick_place_executor.s"
 .PHONY : help
 
 

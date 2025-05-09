@@ -1,7 +1,8 @@
-/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/move_test_cpp_node
-/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/move_test_2_cpp_node
+/home/bin1225/workspaces/ur_gz/install/move_test_cpp/include/move_test_cpp/pick_place_executor.hpp
+/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/libpick_place_executor.a
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/pick_and_place_cpp_node
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/pick_and_place_arg_cpp_node
+/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/demo_controller
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/package_run_dependencies/move_test_cpp
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/parent_prefix_path/move_test_cpp
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/environment/ament_prefix_path.sh
@@ -14,6 +15,8 @@
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/local_setup.dsv
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/package.dsv
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/ament_index/resource_index/packages/move_test_cpp
+/home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/cmake/ament_cmake_export_include_directories-extras.cmake
+/home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/cmake/ament_cmake_export_dependencies-extras.cmake
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/cmake/move_test_cppConfig.cmake
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/cmake/move_test_cppConfig-version.cmake
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/share/move_test_cpp/package.xml
