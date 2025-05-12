@@ -1,3 +1,4 @@
+/home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/gripper_listener
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/include/move_test_cpp/pick_place_executor.hpp
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/libpick_place_executor.a
 /home/bin1225/workspaces/ur_gz/install/move_test_cpp/lib/move_test_cpp/pick_and_place_cpp_node

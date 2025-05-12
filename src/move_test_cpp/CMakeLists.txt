@@ -58,6 +58,9 @@ target_link_libraries(demo_controller pick_place_executor)
 ament_target_dependencies(demo_controller
   rclcpp moveit_ros_planning_interface geometry_msgs std_msgs tf2)
 
+add_executable(gripper_listener src/gripper_listener.cpp)
+ament_target_dependencies(gripper_listener rclcpp sensor_msgs)
+install(TARGETS gripper_listener DESTINATION lib/${PROJECT_NAME})
 # ───────────────────────────────────────
 # 6. 설치 규칙
 # ───────────────────────────────────────

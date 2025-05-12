@@ -164,7 +164,7 @@ int main(int argc, char **argv)
   geometry_msgs::msg::PoseStamped home_pose = pick_pose;
   place_pose.pose.position.x = place_x;
   place_pose.pose.position.y = place_y;
-  place_pose.pose.position.z = place_z+0.5;
+  place_pose.pose.position.z = place_z + 0.5;
   if (!goToPose(move_group, place_pose, logger))
   {
     RCLCPP_ERROR(logger, "Failed to reach place pose");

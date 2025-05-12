@@ -249,6 +249,19 @@ demo_controller/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_controller.dir/build.make CMakeFiles/demo_controller.dir/build
 .PHONY : demo_controller/fast
 
+#=============================================================================
+# Target rules for targets named gripper_listener
+
+# Build rule for target.
+gripper_listener: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gripper_listener
+.PHONY : gripper_listener
+
+# fast build rule for target.
+gripper_listener/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_listener.dir/build.make CMakeFiles/gripper_listener.dir/build
+.PHONY : gripper_listener/fast
+
 src/demo_controller.o: src/demo_controller.cpp.o
 .PHONY : src/demo_controller.o
 
@@ -272,6 +285,30 @@ src/demo_controller.s: src/demo_controller.cpp.s
 src/demo_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_controller.dir/build.make CMakeFiles/demo_controller.dir/src/demo_controller.cpp.s
 .PHONY : src/demo_controller.cpp.s
+
+src/gripper_listener.o: src/gripper_listener.cpp.o
+.PHONY : src/gripper_listener.o
+
+# target to build an object file
+src/gripper_listener.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_listener.dir/build.make CMakeFiles/gripper_listener.dir/src/gripper_listener.cpp.o
+.PHONY : src/gripper_listener.cpp.o
+
+src/gripper_listener.i: src/gripper_listener.cpp.i
+.PHONY : src/gripper_listener.i
+
+# target to preprocess a source file
+src/gripper_listener.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_listener.dir/build.make CMakeFiles/gripper_listener.dir/src/gripper_listener.cpp.i
+.PHONY : src/gripper_listener.cpp.i
+
+src/gripper_listener.s: src/gripper_listener.cpp.s
+.PHONY : src/gripper_listener.s
+
+# target to generate assembly for a file
+src/gripper_listener.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_listener.dir/build.make CMakeFiles/gripper_listener.dir/src/gripper_listener.cpp.s
+.PHONY : src/gripper_listener.cpp.s
 
 src/pick_and_place.o: src/pick_and_place.cpp.o
 .PHONY : src/pick_and_place.o
@@ -361,12 +398,16 @@ help:
 	@echo "... move_test_cpp_uninstall"
 	@echo "... uninstall"
 	@echo "... demo_controller"
+	@echo "... gripper_listener"
 	@echo "... pick_and_place_arg_cpp_node"
 	@echo "... pick_and_place_cpp_node"
 	@echo "... pick_place_executor"
 	@echo "... src/demo_controller.o"
 	@echo "... src/demo_controller.i"
 	@echo "... src/demo_controller.s"
+	@echo "... src/gripper_listener.o"
+	@echo "... src/gripper_listener.i"
+	@echo "... src/gripper_listener.s"
 	@echo "... src/pick_and_place.o"
 	@echo "... src/pick_and_place.i"
 	@echo "... src/pick_and_place.s"

@@ -67,6 +67,7 @@ all: CMakeFiles/pick_place_executor.dir/all
 all: CMakeFiles/pick_and_place_cpp_node.dir/all
 all: CMakeFiles/pick_and_place_arg_cpp_node.dir/all
 all: CMakeFiles/demo_controller.dir/all
+all: CMakeFiles/gripper_listener.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -80,6 +81,7 @@ clean: CMakeFiles/pick_place_executor.dir/clean
 clean: CMakeFiles/pick_and_place_cpp_node.dir/clean
 clean: CMakeFiles/pick_and_place_arg_cpp_node.dir/clean
 clean: CMakeFiles/demo_controller.dir/clean
+clean: CMakeFiles/gripper_listener.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -141,7 +143,7 @@ CMakeFiles/move_test_cpp_uninstall.dir/clean:
 CMakeFiles/pick_place_executor.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_place_executor.dir/build.make CMakeFiles/pick_place_executor.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_place_executor.dir/build.make CMakeFiles/pick_place_executor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles --progress-num=7,8 "Built target pick_place_executor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles --progress-num=9,10 "Built target pick_place_executor"
 .PHONY : CMakeFiles/pick_place_executor.dir/all
 
 # Build rule for subdir invocation for target.
@@ -167,7 +169,7 @@ CMakeFiles/pick_place_executor.dir/clean:
 CMakeFiles/pick_and_place_cpp_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_cpp_node.dir/build.make CMakeFiles/pick_and_place_cpp_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_cpp_node.dir/build.make CMakeFiles/pick_and_place_cpp_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles --progress-num=5,6 "Built target pick_and_place_cpp_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles --progress-num=7,8 "Built target pick_and_place_cpp_node"
 .PHONY : CMakeFiles/pick_and_place_cpp_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -193,7 +195,7 @@ CMakeFiles/pick_and_place_cpp_node.dir/clean:
 CMakeFiles/pick_and_place_arg_cpp_node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make CMakeFiles/pick_and_place_arg_cpp_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pick_and_place_arg_cpp_node.dir/build.make CMakeFiles/pick_and_place_arg_cpp_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles --progress-num=3,4 "Built target pick_and_place_arg_cpp_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles --progress-num=5,6 "Built target pick_and_place_arg_cpp_node"
 .PHONY : CMakeFiles/pick_and_place_arg_cpp_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -237,6 +239,32 @@ demo_controller: CMakeFiles/demo_controller.dir/rule
 CMakeFiles/demo_controller.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/demo_controller.dir/build.make CMakeFiles/demo_controller.dir/clean
 .PHONY : CMakeFiles/demo_controller.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/gripper_listener.dir
+
+# All Build rule for target.
+CMakeFiles/gripper_listener.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_listener.dir/build.make CMakeFiles/gripper_listener.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_listener.dir/build.make CMakeFiles/gripper_listener.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles --progress-num=3,4 "Built target gripper_listener"
+.PHONY : CMakeFiles/gripper_listener.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/gripper_listener.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/gripper_listener.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bin1225/workspaces/ur_gz/build/move_test_cpp/CMakeFiles 0
+.PHONY : CMakeFiles/gripper_listener.dir/rule
+
+# Convenience name for target.
+gripper_listener: CMakeFiles/gripper_listener.dir/rule
+.PHONY : gripper_listener
+
+# clean rule for target.
+CMakeFiles/gripper_listener.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gripper_listener.dir/build.make CMakeFiles/gripper_listener.dir/clean
+.PHONY : CMakeFiles/gripper_listener.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
