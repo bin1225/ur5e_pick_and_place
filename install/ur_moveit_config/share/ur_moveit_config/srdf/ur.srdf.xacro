@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
-
-  <!-- robot name parameter -->
-  <xacro:arg name="name" default="ur"/>
-
-  <xacro:include filename="$(find ur_moveit_config)/srdf/ur_macro.srdf.xacro"/>
-
-  <xacro:ur_srdf/>
-
-  <group name="gripper">
-    <joint name="gripper_robotiq_85_left_knuckle_joint"/>
-  </group>
-
-  <end_effector name="gripper" parent_link="tool0" group="gripper"/>
-
-  
-</robot>
+/home/bin1225/workspaces/ur_gz/src/ur_moveit_config/srdf/ur.srdf.xacro

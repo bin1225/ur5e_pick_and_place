@@ -34,8 +34,8 @@ int main(int argc, char **argv)
   std::vector<TargetPair> goals;
 
   goals.push_back({
-    makePose(0.35, 0.158, 0.181, q),   // pick
-    makePose(0.35, 0.358,  0.181, q)    // place (고정)
+    makePose(0.85, 0.158, 0.181, q),   // pick
+    makePose(0.85, 0.358,  0.181, q)    // place (고정)
   });
   goals.push_back({
     makePose(0.7, 0.158, 0.181, q),   // pick
