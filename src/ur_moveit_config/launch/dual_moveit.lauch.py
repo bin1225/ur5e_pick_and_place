@@ -52,17 +52,18 @@ def launch_setup(context, *args, **kwargs):
     
     # MoveIt config - context-aware!
     moveit_cfg = (
-        MoveItConfigsBuilder(robot_name="ur", package_name="ur_moveit_config")
+        MoveItConfigsBuilder(robot_name="dual_ur", package_name="ur_moveit_config")
             .robot_description(
                 "/home/bin1225/workspaces/ur_gz/src/ur_simulation_gz/ur_simulation_gz/urdf/dual_gz.urdf.xacro",
-                {"name": ur_type, "ur_type": ur_type, "tf_prefix": tf_prefix})
+                {"name": "dual_ur", "ur_type": ur_type, "tf_prefix": tf_prefix}
+            )
             .robot_description_semantic(
                 "/home/bin1225/workspaces/ur_gz/src/ur_moveit_config/srdf/dual.srdf.xacro",
-                {"name": ur_type, "tf_prefix": tf_prefix})
+                {"name": "dual_ur", "tf_prefix": tf_prefix}
+            )
             .planning_pipelines(
-            default_planning_pipeline="ompl",
-            pipelines=["ompl"],
-            load_all=False
+                default_planning_pipeline="ompl",
+                pipelines=["ompl"]
             )
             .to_moveit_configs()
     )
@@ -77,7 +78,16 @@ def launch_setup(context, *args, **kwargs):
         servo_yaml = yaml.safe_load(f)
 
 
-        
+    controller_yaml_filename = f"{ns}_moveit_controllers.yaml"  # 예: ur1_moveit_controllers.yaml
+    controller_yaml_path = (
+        Path(get_package_share_directory("ur_moveit_config")) / "config" / controller_yaml_filename
+    )
+    if not controller_yaml_path.exists():
+        raise RuntimeError(f"{controller_yaml_path} 파일이 존재하지 않습니다. 네임스페이스와 yaml 이름을 확인하세요!")
+
+    with open(controller_yaml_path, "r") as f:
+        controller_yaml = yaml.safe_load(f)
+
     
     # 노드들 선언 (모두 context-aware!)
     move_group = Node(
@@ -86,6 +96,7 @@ def launch_setup(context, *args, **kwargs):
         parameters=[
             moveit_cfg.to_dict(),
             warehouse_ros_config,
+            controller_yaml,
             {"use_sim_time": True, "publish_robot_description_semantic": publish_sem},
         ],
     )
@@ -101,7 +112,7 @@ def launch_setup(context, *args, **kwargs):
     
     rviz_node = Node(
         namespace=ns,
-        package="rviz2", executable="rviz2", name="rviz2_moveit",
+        package="rviz2", executable="rviz2", name=(ns+"_rvize"),
         condition=IfCondition(rviz_on), output="log",
         arguments=["-d", rviz_cfg],
         parameters=[
@@ -115,22 +126,24 @@ def launch_setup(context, *args, **kwargs):
         ],
     )
 
-    wait_robot_description = Node(
-        package="ur_robot_driver",
-        executable="wait_for_robot_description",
-        output="screen",
-    )
+    # wait_robot_description = Node(
+        
+    #     package="ur_robot_driver",
+    #     executable="wait_for_robot_description",
+    #     output="screen",
+    # )
 
-    # RegisterEventHandler 등은 context-safe하게 등록
-    return [
-        wait_robot_description,
-        RegisterEventHandler(
-            OnProcessExit(
-                target_action=wait_robot_description,
-                on_exit=[move_group, rviz_node, servo_node],
-            )
-        ),
-    ]
+    # # RegisterEventHandler 등은 context-safe하게 등록
+    # return [
+    #     wait_robot_description,
+    #     RegisterEventHandler(
+    #         OnProcessExit(
+    #             target_action=wait_robot_description,
+    #             on_exit=[move_group, rviz_node, servo_node],
+    #         )
+    #     ),
+    # ]
+    return [move_group, rviz_node, servo_node]
 
 def generate_launch_description():
     ld = LaunchDescription(declare_arguments())
