@@ -521,7 +521,7 @@ moveit_ros_warehouse_DIR:PATH=/opt/ros/jazzy/share/moveit_ros_warehouse/cmake
 object_recognition_msgs_DIR:PATH=/opt/ros/jazzy/share/object_recognition_msgs/cmake
 
 //The directory containing a CMake configuration file for octomap.
-octomap_DIR:PATH=/opt/ros/jazzy/share/octomap
+octomap_DIR:PATH=/usr/share/octomap
 
 //The directory containing a CMake configuration file for octomap_msgs.
 octomap_msgs_DIR:PATH=/opt/ros/jazzy/share/octomap_msgs/cmake

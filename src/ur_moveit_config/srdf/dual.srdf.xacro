@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
+
 <robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
 
-  <!-- robot name parameter -->
-  <xacro:arg name="name" default="ur"/>
-  <xacro:arg name="prefix" default=""/>
+  <xacro:arg name="name" default=""/>
+  <xacro:include filename="/home/bin1225/workspaces/ur_gz/src/ur_moveit_config/srdf/dual_macro.srdf.xacro"/>
+  <xacro:arg name="tf_prefix" default="" />
+  <xacro:ur_srdf tf_prefix="$(arg tf_prefix)" />
 
-  <xacro:property name="prefix" value="$(arg prefix)"/>
-  
-  <xacro:include filename="$(find ur_moveit_config)/srdf/dual_macro.srdf.xacro"/>
-
-  <xacro:ur_srdf prefix="$(arg prefix)"/>
-
-  <group name="gripper">
-    <!-- ★ joint 이름에도 prefix -->
-    <joint name="${prefix}gripper_robotiq_85_left_knuckle_joint"/>
-  </group>
-
-  <end_effector name="gripper"
-                parent_link="${prefix}tool0"
-                group="gripper"/>
-
-  
 </robot>
