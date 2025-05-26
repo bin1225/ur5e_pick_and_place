@@ -3,7 +3,13 @@
 
   <!-- ★ macro 파라미터에 tf_prefix 추가 -->
   <xacro:macro name="ur_srdf" params="tf_prefix">
-    <!--──────────── GROUPS ────────────-->
+  <virtual_joint
+      name="${tf_prefix}world_joint"
+      type="fixed"
+      parent_frame="world"
+      child_link="${tf_prefix}base_link"/>
+
+  <!--──────────── GROUPS ────────────-->
   <group name="${tf_prefix}manipulator">
     <chain base_link="${tf_prefix}base_link" tip_link="${tf_prefix}tool0"/>
   </group>

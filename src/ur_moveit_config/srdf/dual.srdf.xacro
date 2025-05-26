@@ -2,9 +2,10 @@
 
 <robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
 
-  <xacro:arg name="name" default=""/>
+  <xacro:arg name="name" default="ur5e"/>
   <xacro:include filename="/home/bin1225/workspaces/ur_gz/src/ur_moveit_config/srdf/dual_macro.srdf.xacro"/>
   <xacro:arg name="tf_prefix" default="" />
   <xacro:ur_srdf tf_prefix="$(arg tf_prefix)" />
+
 
 </robot>

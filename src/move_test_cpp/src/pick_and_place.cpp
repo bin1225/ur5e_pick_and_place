@@ -15,7 +15,7 @@ int main(int argc, char** argv)
   auto node = rclcpp::Node::make_shared("pick_and_place_cpp");
 
   // MoveGroupInterface for UR5e manipulator
-  moveit::planning_interface::MoveGroupInterface move_group(node, "ur_manipulator");
+  moveit::planning_interface::MoveGroupInterface move_group(node, "ur1_manipulator");
   move_group.setPlanningTime(10.0);
   move_group.setStartStateToCurrentState();
   move_group.setGoalPositionTolerance(0.01);   // 1cm
@@ -28,7 +28,7 @@ int main(int argc, char** argv)
 
   // Gripper command publisher
   auto gripper_pub = node->create_publisher<std_msgs::msg::Float64MultiArray>(
-    "/forward_position_gripper_controller/commands", 10);
+    "/ur1/forward_position_gripper_controller/commands", 10);
 
   // Open gripper
   std_msgs::msg::Float64MultiArray open_cmd;
@@ -39,7 +39,7 @@ int main(int argc, char** argv)
 
   // --- PICK ---
   geometry_msgs::msg::PoseStamped pick_pose;
-  pick_pose.header.frame_id = "base_link";
+  pick_pose.header.frame_id = "ur1_base_link";
   
   // 위치 설정
   pick_pose.pose.position.x = 0.5;
@@ -78,7 +78,7 @@ int main(int argc, char** argv)
 
   // --- PLACE ---
   geometry_msgs::msg::PoseStamped place_pose;
-  place_pose.header.frame_id = "base_link";
+  place_pose.header.frame_id = "ur1_base_link";
   place_pose.pose.position.x = 0.3;
   place_pose.pose.position.y = -0.3;
   place_pose.pose.position.z = 0.0;

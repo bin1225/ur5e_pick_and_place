@@ -52,19 +52,19 @@ def launch_setup(context, *args, **kwargs):
     
     # MoveIt config - context-aware!
     moveit_cfg = (
-        MoveItConfigsBuilder(robot_name="dual_ur", package_name="ur_moveit_config")
+        MoveItConfigsBuilder(robot_name="ur5e", package_name="ur_moveit_config")
             .robot_description(
                 "/home/bin1225/workspaces/ur_gz/src/ur_simulation_gz/ur_simulation_gz/urdf/dual_gz.urdf.xacro",
-                {"name": "dual_ur", "ur_type": ur_type, "tf_prefix": tf_prefix}
+                {"name": "ur5e", "ur_type": ur_type, "tf_prefix": tf_prefix}
             )
             .robot_description_semantic(
                 "/home/bin1225/workspaces/ur_gz/src/ur_moveit_config/srdf/dual.srdf.xacro",
-                {"name": "dual_ur", "tf_prefix": tf_prefix}
+                {"name": "ur5e", "tf_prefix": tf_prefix}
             )
-            .planning_pipelines(
-                default_planning_pipeline="ompl",
-                pipelines=["ompl"]
-            )
+            # .planning_pipelines(
+            #     default_planning_pipeline="ompl",
+            #     pipelines=["ompl"]
+            # )
             .to_moveit_configs()
     )
     warehouse_ros_config = {
@@ -126,24 +126,24 @@ def launch_setup(context, *args, **kwargs):
         ],
     )
 
-    # wait_robot_description = Node(
-        
-    #     package="ur_robot_driver",
-    #     executable="wait_for_robot_description",
-    #     output="screen",
-    # )
+    wait_robot_description = Node(
+        namespace=ns,
+        package="ur_robot_driver",
+        executable="wait_for_robot_description",
+        output="screen",
+    )
 
-    # # RegisterEventHandler 등은 context-safe하게 등록
-    # return [
-    #     wait_robot_description,
-    #     RegisterEventHandler(
-    #         OnProcessExit(
-    #             target_action=wait_robot_description,
-    #             on_exit=[move_group, rviz_node, servo_node],
-    #         )
-    #     ),
-    # ]
-    return [move_group, rviz_node, servo_node]
+    # RegisterEventHandler 등은 context-safe하게 등록
+    return [
+        wait_robot_description,
+        RegisterEventHandler(
+            OnProcessExit(
+                target_action=wait_robot_description,
+                on_exit=[move_group, rviz_node, servo_node],
+            )
+        ),
+    ]
+    #return [move_group, rviz_node, servo_node]
 
 def generate_launch_description():
     ld = LaunchDescription(declare_arguments())
