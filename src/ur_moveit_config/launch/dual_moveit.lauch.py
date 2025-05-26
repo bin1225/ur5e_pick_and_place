@@ -11,6 +11,7 @@ from launch.event_handlers import OnProcessExit
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 
 from launch_ros.actions import Node
+from launch.substitutions import TextSubstitution
 from launch_ros.substitutions import FindPackageShare
 from moveit_configs_utils import MoveItConfigsBuilder
 from ament_index_python.packages import get_package_share_directory
@@ -107,8 +108,12 @@ def launch_setup(context, *args, **kwargs):
         parameters=[moveit_cfg.to_dict(), {"moveit_servo": servo_yaml, "use_sim_time": True}],
     )
 
-    rviz_cfg = PathJoinSubstitution(
-        [FindPackageShare("ur_moveit_config"), "config", "moveit.rviz"])
+
+    rviz_cfg = PathJoinSubstitution([
+        FindPackageShare("ur_moveit_config"),
+        "config",
+        TextSubstitution(text=ns + "_moveit.rviz")
+    ])
     
     rviz_node = Node(
         namespace=ns,
