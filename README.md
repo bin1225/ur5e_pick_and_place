@@ -41,7 +41,8 @@ ros2 topic pub /forward_position_gripper_controller/commands std_msgs/msg/Float6
 * move_test_cpp : moveit 실행 및 로봇 제어 코드
 
 ### 실행 
-![alt text](image.png)
+<img width="432" height="480" alt="image" src="https://github.com/user-attachments/assets/654df866-174f-450d-a510-3b9536eafe94" />
+
 ### 현재 구현 완료
 - 로봇 1대 사용한 Pick and Place 
 - Rviz 기반 다중 로봇 Plan, execute 성공
